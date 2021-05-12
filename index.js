@@ -12,7 +12,13 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+app.use('/',(req,res)=>{
+  res.send('api started')
+})
+
 app.use("/auth", authRouter);
+
+
 
 const PORT = process.env.PORT || 9000;
 
