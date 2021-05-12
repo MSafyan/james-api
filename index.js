@@ -12,9 +12,9 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-app.use('/',(req,res)=>{
-  res.send('api started')
-})
+// app.use('/',(req,res)=>{
+//   res.send('api started')
+// })
 
 app.use("/auth", authRouter);
 
